@@ -1,13 +1,13 @@
 ﻿
 using System;
 using System.Text;
-// Гра ""
+// Гра "Вгадай слово"
 
 
 Console.WriteLine("Try to guess hidden word!");
 
 string wordToGuess = "computer";
-char[] stateOfWord = new string('-', wordToGuess.Length).ToCharArray();
+char[] stateOfWord = new string('_', wordToGuess.Length).ToCharArray();
 int attempts = wordToGuess.Length;
 Console.WriteLine("Amount of letters in the word: {0}", wordToGuess.Length);
 Console.WriteLine("Amount of possible tries: {0}", attempts);
