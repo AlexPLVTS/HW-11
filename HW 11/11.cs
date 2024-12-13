@@ -2,10 +2,7 @@
 using System;
 using System.Text;
 // Гра "Вгадай слово"
-
-
 Console.WriteLine("Try to guess hidden word!");
-
 string wordToGuess = "computer";
 char[] stateOfWord = new string('_', wordToGuess.Length).ToCharArray();
 int attempts = wordToGuess.Length;
@@ -42,3 +39,4 @@ while (attempts > 0 && new string(stateOfWord) != wordToGuess)
 Console.WriteLine((new string(stateOfWord) == wordToGuess)
 ? $"You win! Guessed word: {wordToGuess}"
 : $"You lost! Word to guess: {wordToGuess}");
+
